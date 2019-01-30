@@ -10,3 +10,4 @@ images: ['gcr.io/cloud-build-demo-230104/my-image3','gcr.io/cloud-build-demo-230
  #- name: 'gcr.io/cloud-builders/docker'
   # args: ['push', 'gcr.io/cloud-build-demo-230104/my-image1']
 
+ 
