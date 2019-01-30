@@ -3,9 +3,11 @@ steps:
    args: ['build', '-t', 'gcr.io/cloud-build-demo-230104/my-image3', '.']
  - name: 'gcr.io/cloud-builders/docker'
    args: ['build', '-t', 'gcr.io/cloud-build-demo-230104/my-image4', '.'] 
-   
+ - name: 'gcr.io/cloud-builders/docker'
+   args: ['push', 'gcr.io/cloud-build-demo-230104/my-image3','gcr.io/cloud-build-demo-230104/my-image4']
+
 #tags: ['mytag1', 'mytag2']
-images: ['gcr.io/cloud-build-demo-230104/my-image3','gcr.io/cloud-build-demo-230104/my-image4']
+#images: ['gcr.io/cloud-build-demo-230104/my-image3','gcr.io/cloud-build-demo-230104/my-image4']
 
  #- name: 'gcr.io/cloud-builders/docker'
   # args: ['push', 'gcr.io/cloud-build-demo-230104/my-image1']
