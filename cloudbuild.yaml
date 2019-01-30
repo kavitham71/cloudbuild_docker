@@ -1,7 +1,7 @@
 steps:
  - name: 'gcr.io/cloud-builders/docker'
    args: ['build', '-t', 'gcr.io/cloud-build-demo-230104/my-image2', '.']
-   images: ['gcr.io/my-project/myimage2']
+images: ['gcr.io/my-project/myimage2']
 
  #- name: 'gcr.io/cloud-builders/docker'
   # args: ['push', 'gcr.io/cloud-build-demo-230104/my-image1']
