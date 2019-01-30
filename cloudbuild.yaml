@@ -1,14 +1,9 @@
 steps:
  - name: 'gcr.io/cloud-builders/docker'
    args: ['build', '-t', 'gcr.io/$PROJECT_ID/abc', '.']
-   env:
-    - 'abc=my-image3'
- - name: 'gcr.io/cloud-builders/docker'
-   args: ['build', '-t', 'gcr.io/$PROJECT_ID/my-image4', '.'] 
  - name: 'gcr.io/cloud-builders/docker'
    args: ['push', 'gcr.io/$PROJECT_ID/abc']
-   env:
-    - 'abc=my-image3'
+  
 
 options:
     machineType: 'N1_HIGHCPU_8'
