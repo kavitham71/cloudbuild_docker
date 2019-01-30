@@ -1,12 +1,10 @@
 steps:
  - name: 'gcr.io/cloud-builders/docker'
-   args: ['build', '-t', 'gcr.io/$PROJECT_ID/abc', '.']
+   args: ['build', '-t', 'gcr.io/$PROJECT_ID/ABC', '.']
  - name: 'gcr.io/cloud-builders/docker'
-   args: ['push', 'gcr.io/$PROJECT_ID/abc']
+   args: ['push', 'gcr.io/$PROJECT_ID/ABC']
   
 
-options:
-    machineType: 'N1_HIGHCPU_8'
 
 
 #tags: ['mytag1', 'mytag2']
